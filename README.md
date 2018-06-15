@@ -26,23 +26,21 @@ The goals / steps of this project are the following:
 
 My pipeline consisted of 5 steps. 
 
-![original img](/0.png "original img")
+![original img](https://github.com/sd707589/CarND-LaneLines-P1/blob/master/page_pic/0.png)
 
 First, I converted the images to grayscale, and dealt it with Gaussian Blur.
 
-![Gray_blur img](/1.png "Gray_blur img")
+![Gray_blur img](https://github.com/sd707589/CarND-LaneLines-P1/blob/master/page_pic/1.png)
 
 Second, use Canny Method to find edges.
 
-![edge img](/2.png "edge img")
+![edge img](https://github.com/sd707589/CarND-LaneLines-P1/blob/master/page_pic/2.png)
 
 Third, I created a mask to the edges of lane line on the road.
 
-![edge of lane line](/3.png "edge of lane line")
+![edge of lane line](https://github.com/sd707589/CarND-LaneLines-P1/blob/master/page_pic/3.png)
 
 Forth, get the lines by the way of Houph.
-
-![hough line img](/4.png "hough line img")
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by tree steps:
 
@@ -50,6 +48,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
     2. Sort the lines by each line's bottom-x posiotn, and choose only middle 1/3 samples.
     3. For the top point, choose the toppest point; For the bottom point, calculate the average x value. Then, the final one line is made.
 
+![hough line img](https://github.com/sd707589/CarND-LaneLines-P1/blob/master/page_pic/4.png)
 
 ### 2. Identify potential shortcomings with your current pipeline
 
